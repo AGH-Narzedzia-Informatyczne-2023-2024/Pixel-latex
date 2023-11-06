@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\begin{document}
+
+\section{Wprowadzenie}
+W tym dokumencie przedstawimy przykłady wykorzystania różnych elementów w LaTeX, takich jak wyrażenie matematyczne, zdjęcie, tabela, listy, tekst z formatowaniem oraz odwołania do figur i tabel.
+
+\section{Wyrażenie Matematyczne}
+Oto przykład wyrażenia matematycznego w równaniu:
+\[
+E=mc^2
+\]
+
+\section{Zdjęcie}
+Poniżej przedstawiamy przykład wstawienia zdjęcia. Na Rysunku \ref{fig:example} widzimy przykład.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image.jpg}
+    \caption{Przykładowe zdjęcie}
+    \label{fig:example}
+\end{figure}
+
+\section{Tabela}
+Teraz pokażemy przykład tabeli. Tabela \ref{tab:example} przedstawia dane.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Kolumna 1 & Kolumna 2 \\
+        \hline
+        Wiersz 1 & Wartość 1 \\
+        Wiersz 2 & Wartość 2 \\
+        \hline
+    \end{tabular}
+    \caption{Przykładowa tabela}
+    \label{tab:example}
+\end{table}
+
+\section{Listy}
+Poniżej znajduje się przykład listy numerowanej:
+\begin{enumerate}
+    \item Pierwszy item
+    \item Drugi item
+    \item Trzeci item
+\end{enumerate}
+
+A teraz lista nienumerowana:
+\begin{itemize}
+    \item Pierwszy item
+    \item Drugi item
+    \item Trzeci item
+\end{itemize}
+
+\section{Tekst z Formatowaniem}
+Oto przykład tekstu z formatowaniem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non vulputate nunc. In hac habitasse platea dictumst.
+
+\subsection{Podrozdział}
+Nulla facilisi. Morbi nec magna eget dui sodales rhoncus. Fusce in libero et est malesuada interdum. 
+
+\section{Odwołania do Figur i Tabel}
+Jak możemy zobaczyć na Rysunku \ref{fig:example} oraz w Tabeli \ref{tab:example}, ...
+
+\end{document}
